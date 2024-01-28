@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: nginx
+  namespace: applications
   name: nginx
 spec:
   type: ClusterIP
