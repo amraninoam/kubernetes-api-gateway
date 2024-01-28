@@ -9,13 +9,13 @@ spec:
   parentRefs:
   - name: shared-gateway
     namespace: admin
-  hostnames:
-  - "nginx.noama"
+  # hostnames:
+  # - "nginx.noama"
   rules:
   - matches:
     - path:
         type: PathPrefix
-        value: /
+        value: /nginx
     filters:
     - type: URLRewrite
       urlRewrite:

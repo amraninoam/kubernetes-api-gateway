@@ -9,13 +9,13 @@ spec:
   parentRefs:
   - name: shared-gateway
     namespace: admin
-  hostnames:
-  - "argocd.noama"
+  # hostnames:
+  # - "argocd.noama"
   rules:
     - matches:
         - path:
             type: PathPrefix
-            value: /
+            value: /argocd
       filters:
         - type: URLRewrite
           urlRewrite:
